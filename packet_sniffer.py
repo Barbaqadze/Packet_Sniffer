@@ -11,7 +11,7 @@ def get_arguments():
     parser = argparse.ArgumentParser(description="HTTP Packet Sniffer, this is useful when you're a man in the middle." \
                                                  + "It is suggested that you run arp spoof before you use this script, otherwise it'll sniff your personal packets")
 
-    parser.add_argument('-i' , '-iface' , dest='iface' ,  help="Interface to use, default is scapy's default interface")
+    parser.add_argument('-i' , '-iface' , nargs='?' , dest='iface' ,  help="Interface to use, default is scapy's default interface" , required=True)
     args = parser.parse_args()
     return args
 
